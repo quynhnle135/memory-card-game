@@ -14,7 +14,7 @@ body {
     background-color: #6563ff;
 }
 
-/* #reset-button {
+#reset-button {
     padding: 10px 20px;
     border-radius: 5px;
     color: white;
@@ -26,7 +26,7 @@ body {
     letter-spacing: 3px;
     font-size: 15px;
     font-family: "Press Start 2P", system-ui;
-} */
+}
 
 .wrapper {
     padding: 25px;
