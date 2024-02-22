@@ -1,5 +1,4 @@
 @import url('//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
@@ -131,25 +130,31 @@ body {
     font-family: "Press Start 2P", system-ui;
 }
 
-/* .modal {
-    position: fixed; 
-    z-index: 1; 
-    left: 35.5%;
-    top: 43%;
-    width: 500px;
-    height: 800px;
-    font-family: "Press Start 2P", system-ui;
-}
-
-.modal-container {
-    text-align: center;
-    justify-content: center;
-    padding: 25px;
-    border-radius: 10px;;
-    background: #FF9843;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.modal .close {
-
-} */
+@media screen and (max-width: 700px) {
+    #game-header {
+        top: 100px;
+    }
+    .cards{
+      height: 350px;
+      width: 350px;
+    }
+    .card .front-view img{
+      width: 17px;
+    }
+    .card .back-view img{
+      max-width: 40px;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    .cards{
+      height: 300px;
+      width: 300px;
+    }
+    .card .front-view img{
+      width: 15px;
+    }
+    .card .back-view img{
+      max-width: 35px;
+    }
+  }
+  
