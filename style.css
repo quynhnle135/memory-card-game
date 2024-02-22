@@ -132,7 +132,7 @@ body {
 
 @media screen and (max-width: 700px) {
     #game-header {
-        top: 100px;
+        top: 50px;
     }
     .cards{
       height: 350px;
@@ -144,8 +144,12 @@ body {
     .card .back-view img{
       max-width: 40px;
     }
-  }
-  @media screen and (max-width: 530px) {
+}
+
+@media screen and (max-width: 530px) {
+    #game-header {
+        top: 75px;
+    }
     .cards{
       height: 300px;
       width: 300px;
@@ -156,5 +160,21 @@ body {
     .card .back-view img{
       max-width: 35px;
     }
-  }
-  
+}
+
+@media screen and (max-height: 668px) {
+    #game-header {
+        top: 25px;
+    }
+    .cards{
+      height: 300px;
+      width: 300px;
+    }
+    .card .front-view img{
+      width: 15px;
+    }
+    .card .back-view img{
+      max-width: 35px;
+    }
+}
+
