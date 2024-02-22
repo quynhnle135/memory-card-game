@@ -23,11 +23,11 @@ function matchCards(img1, img2) {
     if (img1 === img2) {
         matched++;
         // If all 8 pairs are matched, shuffle cards to reset
-        if (matched === 8) {
-            setTimeout(() => {
-                return shuffleCards();
-            }, 1000);
-        }
+        // if (matched === 8) {
+        //     setTimeout(() => {
+        //         return shuffleCards();
+        //     }, 1000);
+        // }
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
         cardOne = "";

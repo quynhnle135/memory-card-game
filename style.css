@@ -12,6 +12,34 @@ body {
     background-color: #6563ff;
 }
 
+#game-header {
+    font-weight: 700;
+    font-size: 35px;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    top: 150px;
+    margin: auto;
+    position: fixed;
+    font-family: "Press Start 2P", system-ui;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: #6563ff;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    box-shadow: 5px 5px 2px hsl(241, 93%, 83%);
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: "Press Start 2P", system-ui;
+}
+
 .wrapper {
     padding: 25px;
     border-radius: 10px;;
@@ -94,7 +122,29 @@ body {
     }
 }
 
-
 .back-view img {
     max-width: 45px;;
 }
+
+/* .modal {
+    position: fixed; 
+    z-index: 1; 
+    left: 35.5%;
+    top: 43%;
+    width: 500px;
+    height: 800px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.modal-container {
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 10px;;
+    background: #FF9843;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal .close {
+
+} */
