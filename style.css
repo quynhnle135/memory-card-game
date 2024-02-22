@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
@@ -12,20 +12,6 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: #6563ff;
-}
-
-#game-header {
-    font-weight: 700;
-    font-size: 35px;
-    padding: 10px 10px 30px 10px;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    z-index: 1;
-    top: 150px;
-    margin: auto;
-    position: fixed;
-    font-family: "Press Start 2P", system-ui;
 }
 
 /* #reset-button {
@@ -126,6 +112,20 @@ body {
 
 .back-view img {
     max-width: 45px;;
+}
+
+#game-header {
+    font-weight: 700;
+    font-size: 35px;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    top: 150px;
+    margin: auto;
+    position: fixed;
+    font-family: "Press Start 2P", system-ui;
 }
 
 /* .modal {
