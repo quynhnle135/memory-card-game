@@ -41,7 +41,7 @@ body {
     pointer-events: auto;
 }
 
-/* .modal-container {
+.lose-modal-container {
     position: fixed;
     display: flex;
     align-items: center;
@@ -54,12 +54,12 @@ body {
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s ease;
-} */
+}
 
-/* .lose-modal-container.show {
+.lose-modal-container.show {
     opacity: 1;
     pointer-events: auto;
-} */
+}
 
 .modal {
     background-color: white;
@@ -80,7 +80,7 @@ body {
 }
 
 /* Play Again button */
-#play-again {
+.play-again {
     padding: 10px 20px;
     border-radius: 5px;
     color: white;

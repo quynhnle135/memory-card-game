@@ -8,10 +8,15 @@ let disableDeck = false;
 let startingTime = 30;
 let intervalID;
 let seconds;
-
-// Win Modal
-const play_again = document.getElementById("play-again");
+let win = false;
+// Win-Lose Modal
+const win_play_again = document.getElementById("win-play-again");
+const lose_play_again = document.getElementById("lose-play-again");
 const modal_container = document.getElementById("modal-container");
+
+// Lose Modal
+const win_modal_container = document.getElementById("modal-cotainer");
+const lose_modal_container = document.getElementById("lose-modal-container");
 
 // Reset button
 const reset = document.getElementById("reset-button");
@@ -19,11 +24,16 @@ reset.addEventListener("click", () => {
     shuffleCards();
 });
 
-// Play Again button
-play_again.addEventListener("click", () => {
+// Win Play Again button
+win_play_again.addEventListener("click", () => {
     modal_container.classList.remove("show");
     shuffleCards();
 });
+
+lose_play_again.addEventListener("click", () => {
+    lose_modal_container.classList.remove("show");
+    shuffleCards();
+})
 
 function startTimer() {
     clearInterval(intervalID); // Clear existing running timer
@@ -44,7 +54,7 @@ function countdownTimer() {
 
 function endRound() {
     if (matched !== 8) {
-        alert("You lose!");
+        lose_modal_container.classList.add("show");
     }
 }
 
