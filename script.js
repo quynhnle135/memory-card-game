@@ -5,7 +5,7 @@ let cardTwo;
 let matched = 0;
 let disableDeck = false;
 
-let startingTime = 30;
+let startingTime = 20;
 let intervalID;
 let seconds;
 let win = false;
