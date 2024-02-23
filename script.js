@@ -5,7 +5,7 @@ let cardTwo;
 let matched = 0;
 let disableDeck = false;
 
-let startingTime = 20;
+let startingTime = 22;
 let intervalID;
 let seconds;
 let win = false;
@@ -37,7 +37,7 @@ lose_play_again.addEventListener("click", () => {
 
 function startTimer() {
     clearInterval(intervalID); // Clear existing running timer
-    startingTime = 30;
+    startingTime = 22;
     seconds = startingTime;
     intervalID = setInterval(countdownTimer, 1000);
 }
