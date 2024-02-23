@@ -5,7 +5,7 @@ let cardTwo;
 let matched = 0;
 let disableDeck = false;
 
-// Modal
+// Win Modal
 const play_again = document.getElementById("play-again");
 const modal_container = document.getElementById("modal-container");
 
@@ -31,7 +31,7 @@ function flipCard({target: clickedCard}) {
 function matchCards(img1, img2) {
     if (img1 === img2) {
         matched++;
-        // If all 8 pairs are matched, You Win popped up
+        // If all 8 pairs are matched, pop up win modal
         if (matched === 8) {
             setTimeout(() => {
                 modal_container.classList.add("show");
@@ -50,7 +50,7 @@ function matchCards(img1, img2) {
         cardTwo.classList.add("shake");
     }, 400);
 
-    // Remove shake and flip back for 1s
+    // Remove shake and flip back in 0.8s
     setTimeout(() => {
         cardOne.classList.remove("shake", "flip");
         cardTwo.classList.remove("shake", "flip");
@@ -80,5 +80,21 @@ shuffleCards();
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+
+// Set up count-down timer
+let startingTime = 30;
+const intervalID = setInterval(countdownTimer, 1000);
+function countdownTimer() {
+    let seconds = startingTime;
+    let timer = document.getElementById("timer");
+    startingTime--;
+    timer.innerText = `Timer: ${seconds}`;
+    if (startingTime < 0) {
+        clearInterval(intervalID);
+        // return;
+    } 
+}
+
+// Lose Modal
 
 
