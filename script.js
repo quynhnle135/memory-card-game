@@ -77,6 +77,7 @@ function matchCards(img1, img2) {
         matched++;
         // If all 8 pairs are matched, pop up win modal
         if (matched === 8) {
+            clearInterval(intervalID);
             setTimeout(() => {
                 modal_container.classList.add("show");
             }, 500);
