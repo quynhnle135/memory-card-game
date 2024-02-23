@@ -5,6 +5,15 @@ let cardTwo;
 let matched = 0;
 let disableDeck = false;
 
+// Modal
+const play_again = document.getElementById("play-again");
+const modal_container = document.getElementById("modal-container");
+
+play_again.addEventListener("click", () => {
+    modal_container.classList.remove("show");
+    shuffleCards();
+});
+
 function flipCard({target: clickedCard}) {
     if (clickedCard !== cardOne && !disableDeck) {
         clickedCard.classList.add("flip");
@@ -22,12 +31,12 @@ function flipCard({target: clickedCard}) {
 function matchCards(img1, img2) {
     if (img1 === img2) {
         matched++;
-        // If all 8 pairs are matched, shuffle cards to reset
-        // if (matched === 8) {
-        //     setTimeout(() => {
-        //         return shuffleCards();
-        //     }, 1000);
-        // }
+        // If all 8 pairs are matched, You Win popped up
+        if (matched === 8) {
+            setTimeout(() => {
+                modal_container.classList.add("show");
+            }, 500);
+        }
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
         cardOne = "";
@@ -71,3 +80,5 @@ shuffleCards();
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+
+
